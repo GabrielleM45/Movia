@@ -7,7 +7,7 @@
 }
 
 .callout {
-  background-color: rgb(225, 225, 225);
+  background-color:darkslategray;
 }
 
 #main {
@@ -28,7 +28,6 @@
   padding: 0;
   margin: 0;
   justify-content: center;
-  background-color: darkgoldenrod;
   align-items: center;
 }
 
@@ -144,4 +143,12 @@ p {
 
 #movie-display {
   text-align: center;
+  color: white;
+  background-image: url(assets/flimReel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.close-button {
+  color:white;
 }

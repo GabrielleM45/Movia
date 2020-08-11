@@ -121,6 +121,7 @@ var movieDisplay = $("movie-display");
 
 $("#movieSearchBtn").on("click", function (event) {
     event.preventDefault();
+    $("#movie-display").empty();
     var movieTitle = $("#movieInput").val();
     $.ajax({
         url: `https://www.omdbapi.com/?t=${movieTitle}&apikey=trilogy`,
@@ -167,6 +168,13 @@ $("#movieSearchBtn").on("click", function (event) {
 
         // Creating an element to hold the image
         var image = $("<img>").attr("src", imgURL);
+
+        //close modal button
+        var modalCloseBtn = `<button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>`
+
+        movieDiv.append(modalCloseBtn);
 
         // Appending the image
         movieDiv.append(image);
