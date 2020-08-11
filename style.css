@@ -105,9 +105,10 @@ p {
   font-size: 45px;
   text-align: center;
   font-family: "limelight";
-  background-image: url(assets/lobbyfadedOu500pxt.jpg);
+  background-image: url(assets/driveInTheater.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgb(245, 245, 245);
 }
 
 #movieSearchBtn {
