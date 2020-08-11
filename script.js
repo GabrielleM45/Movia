@@ -7,6 +7,7 @@ let score = 0;
 let triviaQuestionIndex = 0;
 let apiResponse = "";
 
+
 startButton.on("click", function () {
     main.css("display", "none");
     header.css("display", "none");
@@ -116,7 +117,6 @@ function scoreQuiz() {
 }
 
 // Movie Search (AJAX CALL)
-var movies = [];
 var movieDisplay = $("movie-display");
 
 $("#movieSearchBtn").on("click", function (event) {
@@ -172,14 +172,19 @@ $("#movieSearchBtn").on("click", function (event) {
         //close modal button
         var modalCloseBtn = `<button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
-    </button>`
+        </button>`
 
         movieDiv.append(modalCloseBtn);
-
+        
         // Appending the image
         movieDiv.append(image);
 
-        // Putting the entire movie above the previous movies
-        $("#movie-display").prepend(movieDiv);
+        var errorMsg = $("<div>").text("OOPS, that was not a title. Can you please try again?");
+
+        if (movieTitle !== ""){
+            $("#movie-display").prepend(movieDiv);
+        } else {
+            $("#movie-display").append(errorMsg, modalCloseBtn);
+        }
     });
 });
