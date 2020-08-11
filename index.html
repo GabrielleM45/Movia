@@ -11,13 +11,11 @@
 </head>
 
 <body>
-    <div class="callout large">
+    <div class="callout small">
         <div class="row column text-center">
             <div class="thumb-wrapper title">
                 <a href="index.html"><img class="m-logo" src="assets/title.gif" alt="vintage tv Movia logo" /></a>
-
             </div>
-            <h2 class="subheader"></h2>
         </div>
     </div>
     <div id="main">
@@ -26,9 +24,9 @@
             <p style="text-align: center;">
                 Are you a film nerd?</br>
                 Regardless of how you answer, you are in the right place!
-            </br>Let’s test your knowledge.</br>Take a few minutes to take the Movia quiz</br><strong>Click the movie pass below</strong></br>You will be presented with 10 multiple-choice questions of random films</br>
+            </br>Let’s test your knowledge.</br>Take a few minutes to take the Movia quiz</br><strong><u>Click the movie pass below</u></strong></br><br>
+            You will be presented with 10 multiple-choice questions of random films</br>
                 Don't worry, if you don't know the answer</br>Stay tuned until the end<br><br>
-                <!-- <input type="image" id="startButton" src="/assets/startButtonticketsmall.jpg" /></p> -->
                 <button type="button" class="success button" id="startButton" style="right: 20px;"></button></p>
         </div>
     </div>
@@ -38,10 +36,11 @@
     <div id="movie-search">
 
         <input id="movieInput" type="text" class="inputBox description col col col" placeholder="Search for movie info by title"></input>
-        <button id="movieSearchBtn" class="button success" type="button" id="button-addon2"></button>
-        <div id="movie-display"></div>
+        <p><button id="movieSearchBtn"  data-open="movie-display" class="button success" type="button" id="button-addon2"></button></p>
+        <div class="full reveal" id="movie-display" data-reveal>
+        </div>
     </div>
-
+ 
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
