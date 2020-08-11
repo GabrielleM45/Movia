@@ -28,6 +28,7 @@
   padding: 0;
   margin: 0;
   justify-content: center;
+  background-color: darkgoldenrod;
   align-items: center;
 }
 
@@ -115,7 +116,7 @@ p {
   padding: 5px;
   width: 350px;
   height: 145px;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-right: 30%;
   margin-top: 2px;
   margin-bottom: 10px;
@@ -139,5 +140,8 @@ p {
 #movieInput {
   display: none;
   padding: 5px;
-  margin-left: 60%;
+}
+
+#movie-display {
+  text-align: center;
 }
