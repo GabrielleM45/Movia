@@ -14,7 +14,7 @@ presented with a score and a search bar to look up
 movie info!
 
 
-DEMO:![Movia_Demo]()
+DEMO:![Movia_Demo](https://catherinelui2.github.io/Movia/assets/MoviaDemo.gif)
 
 Technology used: 
 To create this app, we used
